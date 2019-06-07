@@ -12,12 +12,12 @@ def isPrime(num):
 def generatePrimes(n):
     primes = [2, ]
     noOfPrimes = 1
-    testNum = 3
+    nextPrime = 3
     while noOfPrimes < n:
-        if isPrime(testNum):
-            primes.append(testNum)
+        if isPrime(nextPrime):
+            primes.append(nextPrime)
             noOfPrimes += 1
-        testNum += 2
+        nextPrime += 2
     return primes
 
 
